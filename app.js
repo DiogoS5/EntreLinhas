@@ -56,8 +56,12 @@ function init() {
             updateLastUpdate(data.timestamp);
             
             // Get occupancy if available
-            if (data.occupancy !== undefined) {
-                occupancyPercentage = data.occupancy;
+            if (data.Occupancy !== undefined) {
+                console.log(data.Occupancy);
+                occupancyPercentage = data.Occupancy;
+            }
+            else {
+                console.log("No occupancy data available");
             }
             
             // Auto-refresh currently displayed station or show station list
