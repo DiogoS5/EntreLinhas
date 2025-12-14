@@ -201,7 +201,7 @@ function displayStation(stationName) {
         return;
     }
 
-    // Check if station has no data (empty object)
+    // Check if station has no data (empty object) 
     if (Object.keys(stationData).length === 0) {
         resultsDiv.innerHTML = `
             <div class="station-card">
