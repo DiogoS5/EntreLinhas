@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Metrics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>EntreLinhas</h1>
+        </header>
+
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search for a station..." 
+                autocomplete="off"
+            >
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+
+        <div id="lastUpdate" class="last-update"></div>
+
+        <div id="results" class="results"></div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
